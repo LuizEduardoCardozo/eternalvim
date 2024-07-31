@@ -31,6 +31,10 @@ return {
         capabilities = capabilities
       })
 
+      lspconfig.pylyzer.setup({
+        capabilities = capabilities
+      })
+
 			-- lsp keymaps
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
